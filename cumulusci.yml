@@ -1,27 +1,25 @@
-minimum_cumulusci_version: '3.86.0'
+minimum_cumulusci_version: '3.85.0'
 project:
-    name: asdsxa
+    name: solutioncloud
     package:
-        name: asdsxa
+        name: solutioncloud
+        namespace: solutioncloud
         api_version: '60.0'
     git:
         default_branch: 'main'
-        prefix_feature: 'feature/'
-        prefix_beta: 'beta/'
-        prefix_release: 'release/'
     source_format: sfdx
 
 tasks:
     robot:
         options:
-            suites: robot/asdsxa/tests
+            suites: robot/solutioncloud/tests
             options:
-                outputdir: robot/asdsxa/results
+                outputdir: robot/solutioncloud/results
 
     robot_testdoc:
         options:
-            path: robot/asdsxa/tests
-            output: robot/asdsxa/doc/asdsxa_tests.html
+            path: robot/solutioncloud/tests
+            output: robot/solutioncloud/doc/solutioncloud_tests.html
 
     run_tests:
         options:
