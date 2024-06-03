@@ -2,7 +2,7 @@ minimum_cumulusci_version: '3.86.0'
 project:
     name: asdsxa
     package:
-        name: asdsxa
+        name: pignet
         api_version: '60.0'
     git:
         default_branch: 'main'
